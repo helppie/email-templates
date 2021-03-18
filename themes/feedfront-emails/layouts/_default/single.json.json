@@ -1,0 +1,8 @@
+{
+    "Template": {
+    	"TemplateName": "{{.Title}}",
+    	"SubjectPart": "{{.Params.subject}}",
+    	"TextPart": "{{- .Params.textPart -}}",
+    	"HtmlPart": "{{- replace (replace (replace ( partial `header.html`) `"` `\"`) "\n" "") "\t" "" -}}{{- replace (replace ( (replace (.Content) `"` `\"`)) "\n" "") "\t" "" -}}{{- replace (replace (replace ( partial `footer.html`) `"` `\"`) "\n" "") "\t" "" -}}"
+    }
+}

@@ -1,0 +1,24 @@
+---
+title: "message"
+date: 2020-06-09T12:37:39+05:30
+draft: false
+subject: "[{{messageType}}] You got a new {{messageType}}"
+textPart: "You got a new {{messageType}}: {{ message }}"
+---
+
+<table style="width: 100%;">
+  <tr>
+    <td><span class="heading">Hey, You got a {{messageType}}</span></td>
+  </tr>
+  <tr>
+    <td>
+      <div style="background-color: #f1f6ff;padding: 20px;border-radius: 8px;">
+        {{ message }}
+
+        <br>
+        <small>From: {{ email }}</small>
+      </div>
+
+    </td>
+  </tr>
+</table>
